@@ -13,7 +13,12 @@ const Footer = () => {
 
 	return (
 		<>
-			Footer
+			<footer className="footer mt-auto py-3 bg-light">
+				<div className="container">
+					<span className="text-muted">Customer.io Frontend Take-Home Exercise</span>
+					<span className="text-muted float-end">Owonikoko Oluwaseun S.</span>
+				</div>
+			</footer>
 		</>
 	);
 };
