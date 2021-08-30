@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import moment from 'moment';
 
-import './Home.scss';
 import { fetchApi } from '../../../utils/fetchApi';
+
+import './Home.scss';
 
 
 /**
@@ -24,7 +25,7 @@ const Home = () => {
 		setIsLoading(true);
         const asyncFetchApi = async () => await fetchApi(`customers?page=${currentPage}&per_page=10`, 'GET');
 
-		// fetch customer data from api
+		// fetch customers data summary from api
         asyncFetchApi()
             .then((data) => {
 				setPageCount(Math.ceil(data.meta.total / 10));
@@ -43,12 +44,13 @@ const Home = () => {
 			<div className="container customer-table">
 				<p className="h1 mt-5 mb-5">Customers</p>
 					{/* Customer Table Data */}
-					{/* display loader when data is being fetching */}
+					{/* display loader when data is fetching */}
 					{
 						isLoading ? (
 							<div className="loader"></div>
 						) :
-						customers.length ? (
+						(
+							customers.length ? (
 							<table className="table table-striped">
 								<thead>
 									<tr>
@@ -82,8 +84,9 @@ const Home = () => {
 									}
 								</tbody>
 							</table>
-						) :
-						<div className="mt-3">No customers available</div>
+							) :
+							<div className="mt-3">No customers available</div>
+						)
 					}	
 
 				{/* Pagination */}
