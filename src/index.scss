@@ -52,3 +52,11 @@ code {
       color: #ffffff;
   }
 }
+
+.link-style {
+  color: #422581;
+
+  &:hover {
+    color: #7445da;;
+  }
+}

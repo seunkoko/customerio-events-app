@@ -68,7 +68,14 @@ const Home = () => {
 											(
 												<tr key={customer.id}>
 													<th scope="row">{customer.id}</th>
-													<td className="table-data">{customer.attributes.email}</td>
+													<td className="table-data">
+														<Link
+															to={`/customer/${customer.id}`}
+															className="link-style"
+														>
+															{customer.attributes.email}
+														</Link>
+													</td>
 													<td className="text-muted table-data">
 														{
 															moment.unix(customer.last_updated).format('MMM Do YYYY, h:mm a')
