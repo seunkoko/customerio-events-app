@@ -1,6 +1,6 @@
 # CUSTOMERIO EVENTS APP
 
-![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/main/public/responsive.png)
+![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/master/public/responsive.png)
 
 This application was bootstrapped using CRA (create-react-app).
 
@@ -12,19 +12,19 @@ Hosted on netlify [here](https://customerio-events.netlify.app)
 <details>
 <summary>All Customers View</summary>
 
-![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/main/public/customers.png)
+![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/master/public/customers.png)
 </details>
 
 <details>
 <summary>Customer View</summary>
 
-![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/main/public/customerView.png)
+![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/master/public/customerView.png)
 </details>
 
 <details>
 <summary>Customer Edit</summary>
 
-![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/main/public/customerEdit.png)
+![img](https://raw.githubusercontent.com/seunkoko/customerio-events-app/master/public/customerEdit.png)
 </details>
 
 
