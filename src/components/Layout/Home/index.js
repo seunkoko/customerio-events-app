@@ -70,7 +70,7 @@ const Home = () => {
 													<td className="table-data">{customer.attributes.email}</td>
 													<td className="text-muted table-data">
 														{
-															moment(customer.last_updated).format('MMM Do YYYY, h:mm a')
+															moment.unix(customer.last_updated).format('MMM Do YYYY, h:mm a')
 														}
 													</td>
 													<td>

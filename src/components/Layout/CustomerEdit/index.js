@@ -153,7 +153,7 @@ const CustomerEdit = ({ history }) => {
 									</p>
 
 									<p className="mt-2 mb-5 text-muted">
-										{`Last updated: ${moment(customer.last_updated).format('MMM Do YYYY, h:mm a')}`}
+										{`Last updated: ${moment.unix(customer.last_updated).format('MMM Do YYYY, h:mm a')}`}
 									</p>
 
 									<div className="mb-5">
