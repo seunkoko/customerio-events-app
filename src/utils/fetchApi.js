@@ -16,7 +16,8 @@ export const fetchApi = async (uri, method, body=null) => {
     const requestData = {
         method,
         headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
             }
     }
 
