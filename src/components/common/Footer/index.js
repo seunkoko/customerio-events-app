@@ -18,7 +18,7 @@ const Footer = () => {
 			<footer className="footer mt-auto py-3 bg-light">
 				<div className="container">
 					<span className="footer-text-color">Customer.io Frontend Take-Home Exercise</span>
-					<span className="footer-text-color float-end">Owonikoko Oluwaseun S.</span>
+					<span className="footer-text-color mt-2 mt-sm-0 float-end">Owonikoko Oluwaseun S.</span>
 				</div>
 			</footer>
 		</>
