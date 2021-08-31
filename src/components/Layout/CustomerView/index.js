@@ -59,14 +59,16 @@ const CustomerView = () => {
 							(
 								<>
 									{/* display edit attribute button */}
-									<p className="">
-										<span className="h1 col-xs-12">{customer.attributes.email}</span>
+									<div>
+										<h1 className="h1 col-xs-12">{customer.attributes.email}</h1>
 										<span className="h1 col-xs-12 float-sm-start float-md-end">
-											<a href={`/customer/${customer.id}/edit`}>
+											<Link
+												to={`/customer/${customer.id}/edit`}
+											>
 												<button type="button" className="btn btn-style">Edit Attributes</button>
-											</a>
+											</Link>
 										</span>
-									</p>
+									</div>
 
 									<p className="mt-2 mb-5 text-muted">
 									{`Last updated: ${moment.unix(customer.last_updated).format('MMM Do YYYY, h:mm a')}`}
@@ -78,7 +80,7 @@ const CustomerView = () => {
 											Attributes
 										</p>
 
-										<div className="">
+										<div>
 											<table className="table">
 												<tbody>
 													<tr key={'customer_id'}>

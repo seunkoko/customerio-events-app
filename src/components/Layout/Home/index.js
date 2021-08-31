@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import moment from 'moment';
 
@@ -42,7 +43,7 @@ const Home = () => {
 	return (
 		<>
 			<div className="container customer-table">
-				<p className="h1 mt-5 mb-5">Customers</p>
+				<h1 className="h1 mt-5 mb-5">Customers</h1>
 					{/* Customer Table Data */}
 					{/* display loader when data is fetching */}
 					{
@@ -74,9 +75,11 @@ const Home = () => {
 														}
 													</td>
 													<td>
-														<a href={`/customer/${customer.id}`}>
+														<Link
+															to={`/customer/${customer.id}`}
+														>
 															<button type="button" className="btn btn-style">View</button>
-														</a>
+														</Link>
 													</td>
 												</tr>
 											)

@@ -148,9 +148,7 @@ const CustomerEdit = ({ history }) => {
 							customer && Object.keys(customer).length !== 0 ?
 							(
 								<>
-									<p>
-										<span className="h1 col-xs-12">{customer.attributes.email}</span>
-									</p>
+									<h1 className="h1 col-xs-12">{customer.attributes.email}</h1>
 
 									<p className="mt-2 mb-5 text-muted">
 										{`Last updated: ${moment.unix(customer.last_updated).format('MMM Do YYYY, h:mm a')}`}

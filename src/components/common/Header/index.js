@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import "./Header.scss";
 
@@ -17,7 +18,12 @@ const Header = () => {
 		<>
 			<nav className="navbar navbar-expand-lg fixed-top navbar-dark cio-navbar">
 				<div className="container">
-					<a className="navbar-brand" href="/home">Customer.io</a>
+					<Link
+						to="/home"
+						className="navbar-brand"
+					>
+						Customer.io
+					</Link>
 
 					<button
 						className="navbar-toggler"
@@ -36,18 +42,39 @@ const Header = () => {
 						
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="/home">Home</a>
+								<Link
+									to="/home"
+									className="nav-link active"
+								>
+									Home
+								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="/customers">Customers</a>
+								<Link
+									to="/customers"
+									className="nav-link"
+								>
+									Customers
+								</Link>
 							</li>
 						</ul>
 						<ul className="navbar-nav d-flex">
 							<li className="nav-item">
-								<a className="nav-link" aria-current="page" href="#profile">take-home@customer.io</a>
+								<Link
+									to="/#profile"
+									className="nav-link"
+									aria-current="page"
+								>
+									take-home@customer.io
+								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="/logout">Log out</a>
+								<Link
+									to="/logout"
+									className="nav-link"
+								>
+									Log out
+								</Link>
 							</li>
 						</ul>
 					</div>
